@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/azul"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        app:srcCompat="@drawable/img_person" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nombre"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gris"
+            android:textSize="18sp"
+            android:layout_marginRight="4dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gris"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="Correo"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:background="@color/gris"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="Contraseña"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:inputType="textPassword"
+        android:background="@color/gris"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Teléfono"
+        android:gravity="bottom"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:background="@color/gris"
+        android:inputType="number"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Registrar"
+        android:backgroundTint="@color/azul"
+        android:layout_margin="8dp"/>
+</LinearLayout>
