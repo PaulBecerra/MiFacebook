@@ -1,9 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Facebook"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Número de celular o correo electrónico"
+        android:textColor="@color/black"
+        android:gravity="bottom"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_margin="8dp"
+        android:textSize="14sp"
+        android:background="@color/gris"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Constraseña"
+        android:gravity="bottom"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:inputType="textPassword"
+        android:layout_margin="8dp"
+        android:textSize="14sp"
+        android:background="@color/gris"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1.5"
+        android:backgroundTint="@color/azul"
+        android:onClick="openMainActivityListener"
+        android:text="Iniciar sesión"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="@color/azul"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="32dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:text="o"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:backgroundTint="@color/verde"
+        android:onClick="openMainActivityListener"
+        android:text="Crear cuenta nueva"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Español"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="English (US)"
+        android:textColor="@color/azul"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Français (France)"
+        android:textColor="@color/azul"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Portuguës (Brasil)"
+        android:layout_weight="1"
+        android:textColor="@color/azul"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="中国人 (日本人)"
+        android:textColor="@color/azul"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Italiano"
+        android:textColor="@color/azul"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Más idiomas"
+        android:textColor="@color/azul"
+        android:layout_marginLeft="8dp"
+        android:textSize="14dp"/>
+
+</LinearLayout>
